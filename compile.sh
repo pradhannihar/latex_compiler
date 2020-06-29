@@ -10,7 +10,7 @@ makeindex -s nomencl.ist -o $FILE_NAME.nls $FILE_NAME.nlo
 pdflatex $FILE_NAME.tex
 echo "============== Compiling tex file  $FILE_NAME done  =============="
 
-read -p "Enter yes or no for commiting the modification" var
+read -p "Enter yes(y) or no for commiting the modification" var
 if [ "$var" = "y" ];
 then 
 	git add .
